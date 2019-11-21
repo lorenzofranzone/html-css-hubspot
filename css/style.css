@@ -354,3 +354,23 @@ footer {
   background: darkred;
   border-bottom: 1px solid #f5f8fa;
 }
+
+.sub-footer {
+  background: yellow;
+}
+
+.sub-footer:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.sub-footer-logo {
+  width: 25%;
+  float: left;
+}
+
+.sub-footer-links {
+  width: 65%;
+  float: right;
+}
