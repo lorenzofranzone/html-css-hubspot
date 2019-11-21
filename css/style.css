@@ -125,7 +125,6 @@ ul.nav-top-left {
 }
 
 .nav-top-left li:first-child a {
-  padding-right: 32px;
   padding-left: 0;
   border-right: 1px solid #cbd6e2;
 }
@@ -153,16 +152,18 @@ Navbar Main
 }
 
 .navbar-main ul {
-  background: darkred;
   float: right;
 }
 
 .navbar-main ul li:first-child {
-  background: red;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -16px;
   transform: translateY(-50%);
+}
+
+.navbar-main ul li:first-child .logo {
+  vertical-align: middle;
 }
 
 .navbar-main ul li a {
