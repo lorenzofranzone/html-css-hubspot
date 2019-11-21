@@ -286,7 +286,40 @@ Customers
 
 .customers {
   height: 300px;
+  padding: 32px;
   background: #fff;
+}
+
+.customer .container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.customers-content {
+  width: 25%;
+  margin: 32px;
+  background: pink;
+  float: left;
+}
+
+.customers-logos {
+  width: 60%;
+  float: right;
+  margin: 32px;
+}
+
+.customers-logos table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customers-logos table tr, .customers-logos table td {
+  padding: 20px;
+}
+
+.customers-logos table img {
+  width: 110px;
 }
 
 /*--------------------------------------------------
