@@ -18,6 +18,7 @@ General
 body {
   font-family: 'Lato', sans-serif;
   background: #fff;
+  font-size: 16px;
 }
 
 .container {
@@ -42,13 +43,48 @@ HEADER
 //////////////////////////////////////////////////*/
 
 /*--------------------------------------------------
+Navbar General
+--------------------------------------------------*/
+
+header nav ul li {
+  list-style: none;
+  display: inline;
+  line-height: 90px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+/*--------------------------------------------------
 Navbar Top
 --------------------------------------------------*/
 
 .navbar-top {
   background: #f5f8fa;
-  height: 50px;
   border-bottom: 1px solid #cbd6e2;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-top ul li a {
+  color: #7c98b6;
+}
+
+.navbar-top .container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+ul.nav-top-left {
+  background: darkred;
+  float: left;
+}
+
+ul.nav-top-right {
+  background: darkred;
+  float: right;
 }
 
 /*--------------------------------------------------
@@ -57,8 +93,36 @@ Navbar Main
 
 .navbar-main {
   background: #fff;
-  height: 50px;
   box-shadow: 0px 2px 8px rgba(0,0,0,.15);
+  position: relative;
+}
+
+.navbar-main .container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.navbar-main .container {
+  position: relative;
+}
+
+.navbar-main ul {
+  background: darkred;
+  float: right;
+}
+
+.navbar-main ul li:first-child {
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.navbar-main ul li a {
+  color: #33475b;
+  font-weight: 800;
 }
 
 /*--------------------------------------------------
