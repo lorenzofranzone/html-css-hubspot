@@ -256,7 +256,28 @@ Community
 
 .community {
   height: 500px;
+  padding: 130px 0;
   background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+  text-align: center;
+  color: #fff;
+}
+
+.community table {
+  width: 100%;
+  margin: 32px auto 0;
+  border-collapse: collapse;
+}
+
+.community table tr, .community table td {
+  padding: 24px;
+}
+
+.community table td + td {
+  border-left: 1px solid #fff;
+}
+
+.community table tr + tr {
+  border-top: 1px solid #fff;
 }
 
 /*--------------------------------------------------
