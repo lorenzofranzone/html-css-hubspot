@@ -31,6 +31,10 @@ h2 {
   font-size: 32px;
 }
 
+h3 {
+  font-size: 22px;
+}
+
 p {
   line-height: 150%;
 }
@@ -210,7 +214,7 @@ Intro
 Services
 --------------------------------------------------*/
 
-.services:after {
+.services:after, .service:after {
   content: '';
   display: table;
   clear: both;
@@ -222,9 +226,28 @@ Services
 
 .service {
   background: #fff;
-  height: 100px;
   width: 33.33%;
+  padding: 32px;
   float: left;
+}
+
+.service img {
+  height: 150px;
+}
+
+.service-left-box {
+  width: 30%;
+  padding: 32px;
+  background: darkred;
+  float: left;
+  text-align: center;
+}
+
+.service-right-box {
+  width: 70%;
+  padding: 32px;
+  background: red;
+  float: right;
 }
 
 /*--------------------------------------------------
