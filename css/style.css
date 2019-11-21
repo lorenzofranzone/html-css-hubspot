@@ -46,6 +46,28 @@ p {
   line-height: 150%;
 }
 
+a.dropdown:after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f0d7';
+  font-weight: 600;
+  margin-left: 10px;
+  width: 8px;
+}
+
+a.btn-orange, a.btn-orange-outline {
+  background: #ff7a59;
+  color: #fff!important;
+  border: 1px solid #ff7a59;
+  border-radius: 4px;
+  padding: 26px 48px;
+
+}
+
+a.btn-orange-outline {
+  background: #fff;
+  color: #ff7a59!important;
+}
+
 /* COLORI
 
 top-menu {background: #f5f8fa;}
@@ -69,11 +91,17 @@ Navbar General
 header nav ul li {
   list-style: none;
   display: inline;
-  line-height: 90px;
+  line-height: 75px;
 }
 
 header nav ul li a {
   text-decoration: none;
+  padding: 0px 16px;
+}
+
+header nav a.btn-orange, header nav a.btn-orange-outline {
+  padding: 9px 16px;
+  margin-left: 8px;
 }
 
 /*--------------------------------------------------
@@ -85,6 +113,7 @@ Navbar Top
   border-bottom: 1px solid #cbd6e2;
   position: relative;
   z-index: 1;
+  font-size: 14px;
 }
 
 .navbar-top ul li a {
@@ -92,13 +121,21 @@ Navbar Top
 }
 
 ul.nav-top-left {
-  background: darkred;
   float: left;
 }
 
+.nav-top-left li:first-child a {
+  padding-right: 32px;
+  padding-left: 0;
+  border-right: 1px solid #cbd6e2;
+}
+
 ul.nav-top-right {
-  background: darkred;
   float: right;
+}
+
+.nav-top-right .search {
+  color: #00bda5;
 }
 
 /*--------------------------------------------------
