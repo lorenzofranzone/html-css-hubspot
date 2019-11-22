@@ -45,6 +45,7 @@ h2 {
 
 h3 {
   font-size: 22px;
+  margin: 11px 0;
 }
 
 p {
@@ -250,6 +251,7 @@ main {
 
 main a.btn-orange {
   padding: 12px 24px;
+  margin-top: 20px;
   display: inline-block;
 }
 
@@ -282,31 +284,98 @@ Services
 
 .service:first-child {
   width: 100%;
+  text-align: left;
+  margin-right: 0;
+}
+
+.service:first-child ul li {
+  display: inline;
+  margin: 0 12px 0 0;
+}
+
+.service:last-child {
+  margin-right: 0;
 }
 
 .service {
-  background: #fff;
-  width: 33.33%;
+  width: calc(33.33% - 32px);
   padding: 32px;
+  margin: 24px 48px 24px 0px;
+  background: #fff;
   float: left;
+  text-align: center;
 }
 
 .service img {
   height: 150px;
 }
 
+.service p {
+  margin: 14px 0;
+}
+
+.service ul {
+  text-align: left;
+}
+
+.service ul li {
+  list-style: none;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.service ul li:before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f058';
+  font-size: 18px;
+  margin-right: 8px;
+  color: #ff7a59;
+  vertical-align: middle;
+}
+
+.service .pop-feature {
+  margin: 26px 0 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.service:first-of-type .pop-feature {
+  position: relative;
+}
+
+.service .pop-feature:before {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #e0e6ed;
+  margin: 26px 0;
+}
+
+.service:first-of-type .pop-feature:before {
+  display: none;
+}
+
+.service:first-of-type .pop-feature:after {
+  content: '';
+  display: inline-block;
+  border-bottom: 1px solid #e0e6ed;
+  width: 78%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
 .service-left-box {
   width: 30%;
-  padding: 32px;
-  background: darkred;
+  padding: 0 32px;
   float: left;
   text-align: center;
 }
 
 .service-right-box {
   width: 70%;
-  padding: 32px;
-  background: red;
+  padding: 0 32px;
+  margin-right: 0;
   float: right;
 }
 
