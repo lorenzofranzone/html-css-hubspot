@@ -37,6 +37,7 @@ body {
 h1 {
   font-size: 55px;
   font-weight: 900;
+  margin-bottom: 27px;
 }
 
 h2 {
@@ -67,6 +68,10 @@ a.btn {
   text-decoration: none;
   display: inline-block;
   text-decoration: none;
+}
+
+a.btn:hover {
+  opacity: 0.85;
 }
 
 a.btn-orange, a.btn-orange-outline {
@@ -124,7 +129,7 @@ Navbar Top
   background: #f5f8fa;
   border-bottom: 1px solid #cbd6e2;
   position: relative;
-  z-index: 1;
+  z-index: 3;
   font-size: 14px;
 }
 
@@ -152,10 +157,15 @@ ul.nav-top-right {
 ul.nav-top-right li a.btn-orange,
 ul.nav-top-right li a.btn-orange-outline {
   display: inline;
+  font-size: 12px;
 }
 
 .nav-top-right a.btn-small {
   margin-left: 12px;
+}
+
+header .dropdown:after {
+  color: #7c98b6;
 }
 
 /*--------------------------------------------------
@@ -166,6 +176,7 @@ Navbar Main
   background: #fff;
   box-shadow: 0px 2px 8px rgba(0,0,0,.15);
   position: relative;
+  z-index: 2;
 }
 
 .navbar-main .container {
@@ -202,7 +213,7 @@ Header Jumbo
 --------------------------------------------------*/
 
 .header-jumbo {
-  padding: 148px 0px;
+  padding: 142px 0px;
   background-image: linear-gradient(#fff2ee, #fef7ef);
   position: relative;
 }
@@ -575,6 +586,10 @@ footer li a {
   display: block;
   margin-bottom: 18px;
   font-size: 14px;
+}
+
+footer li a:hover:not(.btn-white) {
+  color: #7fd1de;
 }
 
 footer h4 {
