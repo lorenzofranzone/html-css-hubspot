@@ -403,16 +403,24 @@ Community
 --------------------------------------------------*/
 
 .community {
-  height: 500px;
   padding: 130px 0;
   background-image: linear-gradient(45deg, #00a4bd, #00bda5);
   text-align: center;
   color: #fff;
 }
 
+.community h2, .community p {
+  width: 750px;
+  margin: auto;
+}
+
+.community h2 {
+  margin-bottom: 16px;
+}
+
 .community table {
   width: 100%;
-  margin: 32px auto 0;
+  margin: 80px auto 32px;
   border-collapse: collapse;
 }
 
@@ -426,6 +434,35 @@ Community
 
 .community table tr + tr {
   border-top: 1px solid #fff;
+}
+
+.community table td span {
+  display: block;
+  margin-top: 12px;
+}
+
+.community table td span.value {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.community table td span.info {
+  font-size: 14px;
+}
+
+.community table td span.plus {
+  position: relative;
+}
+
+.community table td span.plus:after {
+  content: '\f067';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  font-size: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -4px;
+  left: 4px;
 }
 
 /*--------------------------------------------------
