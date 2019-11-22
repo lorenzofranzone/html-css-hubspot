@@ -34,6 +34,11 @@ body {
   clear: both;
 }
 
+h1 {
+  font-size: 55px;
+  font-weight: 900;
+}
+
 h2 {
   font-size: 32px;
 }
@@ -60,12 +65,14 @@ a.btn-orange, a.btn-orange-outline {
   border: 1px solid #ff7a59;
   border-radius: 4px;
   padding: 26px 48px;
+  text-decoration: none;
 
 }
 
 a.btn-orange-outline {
   background: #fff;
   color: #ff7a59!important;
+  text-decoration: none;
 }
 
 /* COLORI
@@ -158,8 +165,12 @@ Navbar Main
 .navbar-main ul li:first-child {
   position: absolute;
   top: 50%;
-  left: -16px;
+  left: 0;
   transform: translateY(-50%);
+}
+
+.navbar-main ul li:first-child a {
+  padding-left: 0;
 }
 
 .navbar-main ul li:first-child .logo {
@@ -169,6 +180,7 @@ Navbar Main
 .navbar-main ul li a {
   color: #33475b;
   font-weight: 800;
+  display: inline-block;
 }
 
 /*--------------------------------------------------
@@ -176,12 +188,9 @@ Header Jumbo
 --------------------------------------------------*/
 
 .header-jumbo {
-  height: 680px;
-  padding: 256px 0px;
-  /*background-image: background-image: url("../img/jumbotron.png"), linear-gradient(#fff2ee, #fef7ef); */
+  padding: 148px 0px;
   background-image: linear-gradient(#fff2ee, #fef7ef);
   position: relative;
-
 }
 
 .jumbo-bg {
@@ -212,7 +221,20 @@ Header Jumbo
 .jumbo-content {
   width: 50%;
   position: relative;
+  top: -83px;
   z-index: 3;
+}
+
+.jumbo-content p {
+  margin: 16px 0;
+}
+
+.jumbo-content a {
+  display: inline-block;
+}
+
+.jumbo-content .note {
+  font-size: 12px;
 }
 
 
@@ -224,6 +246,11 @@ MAIN
 
 main {
   background: #f5f8fa;
+}
+
+main a.btn-orange {
+  padding: 12px 24px;
+  display: inline-block;
 }
 
 /*--------------------------------------------------
