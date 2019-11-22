@@ -347,6 +347,12 @@ Services
   border-radius: 4px;
 }
 
+.service:hover {
+  transform: scale(1.014);
+  transition: all 0.3s;
+  box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
+}
+
 .service img {
   height: 150px;
 }
