@@ -251,8 +251,22 @@ main {
 
 main a.btn-orange {
   padding: 12px 24px;
-  margin-top: 20px;
+  margin-top: 32px;
   display: inline-block;
+  font-size: 14px;
+}
+
+main a.btn-info {
+  position: absolute;
+  top: 16px;
+  right: -4px;
+  background: #00bda5;
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  border-radius: 25px 10px 10px 25px;
 }
 
 /*--------------------------------------------------
@@ -276,6 +290,10 @@ Intro
 Services
 --------------------------------------------------*/
 
+.services {
+  padding-bottom: 112px;
+}
+
 .services:after, .service:after {
   content: '';
   display: table;
@@ -286,6 +304,7 @@ Services
   width: 100%;
   text-align: left;
   margin-right: 0;
+  position: relative;
 }
 
 .service:first-child ul li {
@@ -374,7 +393,7 @@ Services
 
 .service-right-box {
   width: 70%;
-  padding: 0 32px;
+  padding: 32px;
   margin-right: 0;
   float: right;
 }
