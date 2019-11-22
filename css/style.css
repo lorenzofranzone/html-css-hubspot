@@ -41,6 +41,7 @@ h1 {
 
 h2 {
   font-size: 32px;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -67,6 +68,7 @@ a.btn-orange, a.btn-orange-outline {
   border-radius: 4px;
   padding: 26px 48px;
   text-decoration: none;
+  display: inline-block;
 
 }
 
@@ -74,6 +76,11 @@ a.btn-orange-outline {
   background: #fff;
   color: #ff7a59!important;
   text-decoration: none;
+}
+
+.note {
+  font-size: 12px;
+  margin: 24px 0;
 }
 
 /* COLORI
@@ -143,6 +150,11 @@ ul.nav-top-right {
 
 .nav-top-right .search {
   color: #00bda5;
+}
+
+ul.nav-top-right li a.btn-orange,
+ul.nav-top-right li a.btn-orange-outline {
+  display: inline;
 }
 
 /*--------------------------------------------------
@@ -234,10 +246,6 @@ Header Jumbo
   display: inline-block;
 }
 
-.jumbo-content .note {
-  font-size: 12px;
-}
-
 
 /*//////////////////////////////////////////////////
 --------------------------------------------------
@@ -249,7 +257,7 @@ main {
   background: #f5f8fa;
 }
 
-main a.btn-orange {
+.service a.btn-orange {
   padding: 12px 24px;
   margin-top: 32px;
   display: inline-block;
@@ -323,6 +331,8 @@ Services
   background: #fff;
   float: left;
   text-align: center;
+  box-shadow: 0 0 11px #eaf0f6;
+  border-radius: 4px;
 }
 
 .service img {
@@ -474,10 +484,19 @@ Customers
   background: #fff;
 }
 
+.customers h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.customers p {
+  font-size: 20px;
+}
+
 .customers-content {
   width: 25%;
   margin: 32px;
-  background: pink;
   float: left;
 }
 
@@ -506,14 +525,14 @@ Get Started
 
 .get-started {
   background: #fff;
-  padding: 150px 0;
+  padding: 86px 0;
 }
 
 .get-started .container {
   background: url("../img/woman.webp") no-repeat;
   background-size: 300px;
   background-position: bottom right;
-  height: 350px;
+  height: 360px;
 }
 
 .get-started-content {
@@ -522,6 +541,10 @@ Get Started
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+}
+
+.get-started p {
+  margin-bottom: 24px;
 }
 
 /*//////////////////////////////////////////////////
